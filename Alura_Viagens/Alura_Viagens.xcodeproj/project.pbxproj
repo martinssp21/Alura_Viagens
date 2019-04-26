@@ -11,11 +11,14 @@
 		A509900A2270D64400ED36DF /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50990092270D64400ED36DF /* Viagem.swift */; };
 		A509900C2270D80700ED36DF /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A509900B2270D80700ED36DF /* ViagemDAO.swift */; };
 		A509900E2270DAB100ED36DF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A509900D2270DAB100ED36DF /* TableViewCell.swift */; };
+		A50A6BD52271EF97009DA400 /* PacotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A6BD42271EF97009DA400 /* PacotesViewController.swift */; };
+		A50A6BD72271F139009DA400 /* PacoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A6BD62271F139009DA400 /* PacoteCollectionViewCell.swift */; };
 		A5336E632268ABE600D40049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5336E622268ABE600D40049 /* AppDelegate.swift */; };
 		A5336E652268ABE600D40049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5336E642268ABE600D40049 /* ViewController.swift */; };
 		A5336E682268ABE600D40049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5336E662268ABE600D40049 /* Main.storyboard */; };
 		A5336E6A2268ABE700D40049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5336E692268ABE700D40049 /* Assets.xcassets */; };
 		A5336E6D2268ABE700D40049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5336E6B2268ABE700D40049 /* LaunchScreen.storyboard */; };
+		A558F5FE2272418A00CBCC72 /* DetalhePacoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558F5FD2272418A00CBCC72 /* DetalhePacoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,8 @@
 		A50990092270D64400ED36DF /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
 		A509900B2270D80700ED36DF /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 		A509900D2270DAB100ED36DF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A50A6BD42271EF97009DA400 /* PacotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViewController.swift; sourceTree = "<group>"; };
+		A50A6BD62271F139009DA400 /* PacoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5336E5F2268ABE600D40049 /* Alura_Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alura_Viagens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5336E622268ABE600D40049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5336E642268ABE600D40049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		A5336E692268ABE700D40049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5336E6C2268ABE700D40049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5336E6E2268ABE700D40049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A558F5FD2272418A00CBCC72 /* DetalhePacoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhePacoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,9 @@
 			children = (
 				A5336E642268ABE600D40049 /* ViewController.swift */,
 				A509900D2270DAB100ED36DF /* TableViewCell.swift */,
+				A50A6BD42271EF97009DA400 /* PacotesViewController.swift */,
+				A50A6BD62271F139009DA400 /* PacoteCollectionViewCell.swift */,
+				A558F5FD2272418A00CBCC72 /* DetalhePacoteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,8 +183,11 @@
 				A509900A2270D64400ED36DF /* Viagem.swift in Sources */,
 				A509900C2270D80700ED36DF /* ViagemDAO.swift in Sources */,
 				A5336E652268ABE600D40049 /* ViewController.swift in Sources */,
+				A558F5FE2272418A00CBCC72 /* DetalhePacoteViewController.swift in Sources */,
 				A509900E2270DAB100ED36DF /* TableViewCell.swift in Sources */,
+				A50A6BD72271F139009DA400 /* PacoteCollectionViewCell.swift in Sources */,
 				A5336E632268ABE600D40049 /* AppDelegate.swift in Sources */,
+				A50A6BD52271EF97009DA400 /* PacotesViewController.swift in Sources */,
 				A50990082270D4E500ED36DF /* RoundedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
