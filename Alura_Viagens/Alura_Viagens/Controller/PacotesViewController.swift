@@ -13,8 +13,8 @@ class PacotesViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var labelTotalPacote: UILabel!
     
-    let listaComTodasViagens: Array<Viagem> = ViagemDAO.retornaTodasAsViagens()
-    var listaViagens:Array<Viagem> = []
+    let listaComTodasViagens: Array<PacoteViagem> = PacoteViagemDAO.retornaTodasAsViagens()
+    var listaViagens:Array<PacoteViagem> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +38,7 @@ extension PacotesViewController: UISearchBarDelegate{
         self.listaViagens = self.listaComTodasViagens
         
         if searchText != "" {
-            let filtroListaViagem = NSPredicate(format: "titulo contains %@", searchText)
-            let listaFiltrada:Array<Viagem> = (self.listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
-            print((listaFiltrada.count))
-            self.listaViagens = listaFiltrada
+            self.listaViagens = listaViagens.filter({ $0.viagem.titulo.contains(searchText) })
         }
         
         self.atualizaContadorPacotes()
@@ -57,17 +54,9 @@ extension PacotesViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellPacotes", for: indexPath) as! PacoteCollectionViewCell
         
-        let viagemLinha = listaViagens[indexPath.row]
-        cell.labelCidade.text = viagemLinha.titulo
-        cell.labelDias.text = "\(viagemLinha.quantidadeDeDias) dias"
-        cell.labelValor.text = "R$ \(viagemLinha.preco)"
-        cell.imageViewPacote.image = UIImage(named: viagemLinha.caminhoDaImagem)
+        let pacoteAtual = listaViagens[indexPath.row]
         
-        cell.layer.cornerRadius = 10
-        cell.layer.masksToBounds = true
-        
-        cell.layer.borderWidth = 0.5
-        cell.layer.borderColor = UIColor(displayP3Red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1).cgColor
+        cell.setup(pacoteAtual)
         
         
         return cell
@@ -80,9 +69,13 @@ extension PacotesViewController: UICollectionViewDelegateFlowLayout, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let pacote = listaViagens[indexPath.item]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalhePacoteViewController
-        self.present(controller, animated: true, completion: nil)
+        controller.pacoteSelecionado = pacote
+        if let navigation = self.navigationController {
+            navigation.pushViewController(controller, animated: true)
+        }
     }
 }
 

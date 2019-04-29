@@ -14,4 +14,13 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var labelPreco: UILabel!
     @IBOutlet weak var imageViewViagem: UIImageView!
     
+    func setup (_ viagem: Viagem){
+        self.labelTitulo.text = viagem.titulo
+        self.labelQuantidadeDeDias.text = "\(viagem.quantidadeDeDias) dias"
+        self.labelPreco.text = "R$ \(viagem.preco)"
+        self.imageViewViagem.image = UIImage(named: viagem.caminhoDaImagem)
+        self.imageViewViagem.layer.cornerRadius = 10
+        self.imageViewViagem.layer.masksToBounds = true
+    }
+    
 }

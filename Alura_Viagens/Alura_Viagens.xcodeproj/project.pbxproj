@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A505CBF32273961200D6E51B /* ConfirmacaoPagamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505CBF22273961200D6E51B /* ConfirmacaoPagamentoViewController.swift */; };
+		A5096295227343D200249DED /* PacoteViagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096294227343D200249DED /* PacoteViagem.swift */; };
+		A50962972273449000249DED /* PacoteViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50962962273449000249DED /* PacoteViagemDAO.swift */; };
 		A50990082270D4E500ED36DF /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50990072270D4E500ED36DF /* RoundedView.swift */; };
 		A509900A2270D64400ED36DF /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50990092270D64400ED36DF /* Viagem.swift */; };
 		A509900C2270D80700ED36DF /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A509900B2270D80700ED36DF /* ViagemDAO.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A505CBF22273961200D6E51B /* ConfirmacaoPagamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoPagamentoViewController.swift; sourceTree = "<group>"; };
+		A5096294227343D200249DED /* PacoteViagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagem.swift; sourceTree = "<group>"; };
+		A50962962273449000249DED /* PacoteViagemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemDAO.swift; sourceTree = "<group>"; };
 		A50990072270D4E500ED36DF /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		A50990092270D64400ED36DF /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
 		A509900B2270D80700ED36DF /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 				A50A6BD42271EF97009DA400 /* PacotesViewController.swift */,
 				A50A6BD62271F139009DA400 /* PacoteCollectionViewCell.swift */,
 				A558F5FD2272418A00CBCC72 /* DetalhePacoteViewController.swift */,
+				A505CBF22273961200D6E51B /* ConfirmacaoPagamentoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +112,8 @@
 			children = (
 				A50990092270D64400ED36DF /* Viagem.swift */,
 				A509900B2270D80700ED36DF /* ViagemDAO.swift */,
+				A5096294227343D200249DED /* PacoteViagem.swift */,
+				A50962962273449000249DED /* PacoteViagemDAO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,10 +193,13 @@
 				A509900C2270D80700ED36DF /* ViagemDAO.swift in Sources */,
 				A5336E652268ABE600D40049 /* ViewController.swift in Sources */,
 				A558F5FE2272418A00CBCC72 /* DetalhePacoteViewController.swift in Sources */,
+				A505CBF32273961200D6E51B /* ConfirmacaoPagamentoViewController.swift in Sources */,
 				A509900E2270DAB100ED36DF /* TableViewCell.swift in Sources */,
 				A50A6BD72271F139009DA400 /* PacoteCollectionViewCell.swift in Sources */,
+				A5096295227343D200249DED /* PacoteViagem.swift in Sources */,
 				A5336E632268ABE600D40049 /* AppDelegate.swift in Sources */,
 				A50A6BD52271EF97009DA400 /* PacotesViewController.swift in Sources */,
+				A50962972273449000249DED /* PacoteViagemDAO.swift in Sources */,
 				A50990082270D4E500ED36DF /* RoundedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

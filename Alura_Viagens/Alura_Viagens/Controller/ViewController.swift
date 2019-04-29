@@ -27,14 +27,9 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellDestiny", for: indexPath) as! TableViewCell
-        let viagemLinha = listaViagem[indexPath.row]
-        cell.labelTitulo.text = viagemLinha.titulo
-        cell.labelQuantidadeDeDias.text = "\(viagemLinha.quantidadeDeDias) dias"
-        cell.labelPreco.text = "R$ \(viagemLinha.preco)"
-        cell.imageViewViagem.image = UIImage(named: viagemLinha.caminhoDaImagem)
-        
-        cell.imageViewViagem.layer.cornerRadius = 10
-        cell.imageViewViagem.layer.masksToBounds = true
+        let viagem = listaViagem[indexPath.row]
+       
+        cell.setup(viagem)
         
         return cell
     }
